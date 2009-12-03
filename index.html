@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'>
+<head>
+
+    <title>jQuery Editlist Plugin</title>
+
+    <style type="text/css">
+
+        body { padding: 40px; }
+
+        #wrap {
+
+            width: 400px;
+
+        }     
+
+        .editlist li textarea {
+
+            margin: 0px;
+            outline: none;
+            padding: 0px;
+            border: 0px;
+            width: 100%;
+            font-size: 15px;
+            resize: none;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>jQuery Editlist Plugin</h1>
+
+    <div id="wrap">
+
+    <ul class="editlist">
+        <li>This is an editable list.</li>
+        <li>You can add elements to the list with 'Enter'.</li>
+        <li>Move up and down with the arrow keys.</li>
+        <li>Remove items with backspace.</li>
+        <li>Give it a try. This is a live example.</li>
+    </ul>
+
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.caret.js"></script>
+    <script type="text/javascript" src="jquery.textarea-expander.js"></script>
+    <script type="text/javascript" src="jquery.editlist.js"></script>
+    <script type="text/javascript">
+
+        $(function() {
+
+            $('.editlist li').editlist();
+
+        });
+
+    </script>
+
+</body>
+</html>
